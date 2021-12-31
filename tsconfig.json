@@ -1,0 +1,35 @@
+{
+  "compileOnSave": false,
+	"compilerOptions": {
+		"outDir": "./public/",
+		"noImplicitAny": true,
+		"jsx": "react-jsx",
+		"allowJs": false,
+		"moduleResolution": "node",
+    "target": "es5",
+    "module": "commonjs",
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": false,
+    "noImplicitThis": true,
+    "removeComments": false,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "typeRoots": ["./node_modules/@types", "./src/typings"],
+    "types": ["react", "react-dom", "react-router-dom"],
+    "baseUrl":"./",
+    "paths":{
+      "@src/*": [
+        "./src/*",
+      ],
+      "@typings/*": [
+        "./typings/*",
+      ],
+    },
+	},
+  "include": [
+    "./src/**/*", "public/index.js",
+  ],
+  "exclude": [
+    "./node_modules"
+  ]
+}
